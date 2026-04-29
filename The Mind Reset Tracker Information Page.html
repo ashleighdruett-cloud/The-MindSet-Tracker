@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///C:/Users/ashleigh%20druett/Downloads/mind_reset_tracker_info.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mind Reset Tracker</title>
+<link href="./The Mind Reset Tracker Information Page_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --sage: #4a6358;
+    --sage-light: #6b8c7a;
+    --cream: #f5f0e8;
+    --warm-white: #faf8f4;
+    --lavender: #c4b8d4;
+    --lavender-light: #e8e2f0;
+    --text: #2c2c2c;
+    --text-muted: #6b6b6b;
+    --border: #ddd8ce;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    background: var(--warm-white);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--sage);
+    text-align: center;
+    padding: 14px 40px;
+    letter-spacing: 0.2em;
+    font-size: 11px;
+    color: rgba(255,255,255,0.75);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+  }
+
+  .hero {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 58px;
+    color: var(--sage);
+    letter-spacing: 0.01em;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  .tagline {
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .hero-divider {
+    width: 48px;
+    height: 1px;
+    background: var(--border);
+    margin: 24px auto 32px;
+  }
+
+  .welcome-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 auto;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  /* ── Section headings ── */
+  .section {
+    margin-bottom: 64px;
+  }
+
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--sage-light);
+    font-weight: 500;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── Steps ── */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: start;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .step:first-child {
+    border-top: 1px solid var(--border);
+  }
+
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--sage-light);
+    letter-spacing: 0.1em;
+    padding-top: 2px;
+  }
+
+  .step-text {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 300;
+    padding-top: 2px;
+  }
+
+  .notice {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: var(--lavender-light);
+    border-left: 3px solid var(--lavender);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .notice strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* ── Links ── */
+  .link-block {
+    display: block;
+    padding: 20px 24px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--sage);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
+    position: relative;
+    background: var(--warm-white);
+  }
+
+  .link-block:hover {
+    background: var(--sage);
+    color: white;
+    border-color: var(--sage);
+  }
+
+  .link-block .link-label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    font-weight: 400;
+  }
+
+  .link-block:hover .link-label {
+    color: rgba(255,255,255,0.6);
+  }
+
+  .link-block .link-url {
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .link-arrow {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    opacity: 0.4;
+  }
+
+  /* ── What's Inside ── */
+  .inside-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .inside-item {
+    background: var(--warm-white);
+    padding: 24px 24px;
+  }
+
+  .inside-item .item-title {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 6px;
+  }
+
+  .inside-item .item-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 40px 0 0;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    line-height: 2;
+  }
+
+  .footer-contact {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--sage);
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @media print {
+    body { background: white; }
+    .link-block { border-color: #ccc; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">The Reframe Studio</div>
+
+<div class="page">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>The Mind Reset Tracker</h1>
+    <p class="tagline">Reflect &nbsp;·&nbsp; Reframe &nbsp;·&nbsp; Reset</p>
+    <div class="hero-divider"></div>
+    <p class="welcome-text">
+      Grounded in Cognitive Behavioural Therapy, this tracker helps you notice, challenge,
+      and reframe the thoughts that hold you back.<br>All you need is honesty, a few minutes a day,
+      and a willingness to get curious about your own mind.
+    </p>
+  </div>
+
+  <!-- How to Access -->
+  <div class="section">
+    <div class="section-label">How to access your tracker</div>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <span class="step-text">Click the tracker link below to open your Google Sheet</span>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <span class="step-text">Go to <strong>File</strong> in the top menu</span>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <span class="step-text">Click <strong>Make a copy</strong></span>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <span class="step-text">Save it to your own Google Drive</span>
+      </div>
+      <div class="step">
+        <span class="step-num">05</span>
+        <span class="step-text">Your personal, editable copy is ready to use</span>
+      </div>
+    </div>
+    <div class="notice">
+      <strong>Important:</strong> You must make a copy to edit the tracker. The original link is view-only to protect the template for all buyers.
+    </div>
+  </div>
+
+  <!-- Tracker Link -->
+  <div class="section">
+    <div class="section-label">Your tracker link</div>
+    <a class="link-block" href="https://docs.google.com/spreadsheets/d/1PouHSnvGdMuWOBQ0w0Dl9DJ5_NAY2GjTAVqVkBx4ZGY/edit?usp=sharing" target="_blank">
+      <span class="link-label">Google Sheets</span>
+      <span class="link-url">docs.google.com — The Mind Reset Tracker</span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <!-- YouTube Tutorial -->
+  <div class="section">
+    <div class="section-label">Watch the tutorial</div>
+    <a class="link-block" href="https://youtu.be/bEJ4WsXWWjk?si=x4Fssod8MdlXThWG" target="_blank">
+      <span class="link-label">YouTube walkthrough</span>
+      <span class="link-url">Full video — every tab, how to use it daily, and how to get the most from your Mind Reset</span>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <!-- What's Inside -->
+  <div class="section">
+    <div class="section-label">What's inside your tracker</div>
+    <div class="inside-grid">
+      <div class="inside-item">
+        <div class="item-title">Daily Log</div>
+        <div class="item-desc">Your daily thought reframe journal</div>
+      </div>
+      <div class="inside-item">
+        <div class="item-title">Thinking Patterns</div>
+        <div class="item-desc">Plain-language guide to 7 cognitive distortions</div>
+      </div>
+      <div class="inside-item">
+        <div class="item-title">Evidence Board</div>
+        <div class="item-desc">Build your case against self-doubt</div>
+      </div>
+      <div class="inside-item">
+        <div class="item-title">Weekly Reflections</div>
+        <div class="item-desc">4 weeks of guided end-of-week prompts</div>
+      </div>
+      <div class="inside-item" style="grid-column: 1 / -1;">
+        <div class="item-title">Progress Dashboard</div>
+        <div class="item-desc">Auto-updating mood and pattern charts</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-contact">Questions? We're here to help.</div>
+    The Reframe Studio &nbsp;·&nbsp; The Mind Reset Tracker &nbsp;·&nbsp; 2025 All Rights Reserved<br>
+    Personal use only. Please do not share, resell or redistribute this file.
+  </div>
+
+</div>
+
+
+</body></html>
